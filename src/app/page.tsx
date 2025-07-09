@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+const today = new Date().toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
+
 export default function Home() {
   return (
     <div className="grid items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-gradient-to-br from-green-400 via-green-300 to-green-500">
@@ -10,6 +12,9 @@ export default function Home() {
           <p className="mt-2 text-xl sm:text-2xl font-semibold text-white text-center">this is vibe coding magic</p>
         </div>
       </main>
+      <footer className="w-full flex justify-center items-center py-4 mt-auto text-white text-lg font-medium bg-green-700/70 rounded shadow-lg">
+        <span>with love from cologne &middot; {today}</span>
+      </footer>
     </div>
   );
 }
