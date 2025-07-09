@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const today = new Date().toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
 
 export default function Home() {
