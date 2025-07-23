@@ -120,3 +120,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Add custom drop shadow for icons if not already present */
+.filter.drop-shadow-md {
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+}
+
+/* Optionally, you can add more custom color utilities here if needed */
